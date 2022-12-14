@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Lorem ipsum</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <a href="index.html" class="header-logo"></a>
+      <div class="header-burger js-menu-burger">
+        <span class="header-burger__item js-menu-burger-item"></span>
+      </div>
+      <div class="header-menu js-menu">
+        <a href="#" class="header-menu__item header-menu__item_active">Бизнес</a>
+        <a href="#" class="header-menu__item">О нас</a>
+        <a href="#" class="header-menu__item">Цены</a>
+        <a href="#" class="header-menu__item">Оформить заказ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-info main__info">
+      <h1 class="main-info__title">
+        <span class="main-info__title main-info__title_blue">Lorem ipsum</span> dolor sit <br>
+        amet consectetur <span class="main-info__title main-info__title_blue">adipiscing</span>
+      </h1>
+      <div class="main-info-text">
+        <p class="main-info__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+        <ul class="main-info-list">
+          <li class="main-info-list__item">Totam rem aperiam eaque ipsa</li>
+          <li class="main-info-list__item">Sit voluptatem accusantium doloremque laudantium</li>
+          <li class="main-info-list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+      </div>
+      <div class="main-info-buttons">
+        <a href="#form" class="main-info__button main-info__button_blue js-scroll-to">заказать</a>
+        <a href="#benefits" class="main-info__button main-info__button_white js-scroll-to">подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="order" id="benefits">
+    <div class="order-wrap">
+      <div class="order-description">
+        <h2 class="order__title">Оформление <span class="order__title order__title_blue">Заказа</span></h2>
+        <p class="order__desc">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      </div>
+      <div class="order-benefits">
+        <div class="order-benefits__item" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="order-benefits__item-img" data-item="1"></div>
+          <div class="order-benefits__item-text">Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="order-benefits__item" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="order-benefits__item-img" data-item="2"></div>
+          <div class="order-benefits__item-text">Сonsecteturadipiscing elit</div>
+        </div>
+        <div class="order-benefits__item" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="order-benefits__item-img" data-item="3"></div>
+          <div class="order-benefits__item-text">Sed do eiusmod tempor</div>
+        </div>
+        <div class="order-benefits__item" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="order-benefits__item-img" data-item="4"></div>
+          <div class="order-benefits__item-text">Esse cillum dolore eu fugiat</div>
+        </div>
+        <div class="order-benefits__item" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="order-benefits__item-img" data-item="5"></div>
+          <div class="order-benefits__item-text">Excepteur sint occaecat cupidatat non proident</div>
+        </div>
+      </div>
+      <form action="#" class="order-form" id="form" data-aos="flip-up" data-aos-duration="1500">
+
+        <select class="order-form__select" name="system" id="system">
+          <option value="value1">Выберите тип системы</option>
+          <option value="value2">Sed ut perspiciatis</option>
+          <option value="value3">Nemo enim ipsam</option>
+          <option value="value4">Et harum quidem</option>
+          <option value="value5">Temporibus autem</option>
+          <option value="value6">Itaque earum rerum</option>
+        </select>
+        <input type="text" name="email" class="order-form__input" placeholder="Ваше имя">
+        <input type="text" name="name" class="order-form__input" placeholder="Ваш e-mail">
+
+        <div class="order-form-range">
+          <div class="order-form-range__text">Sed ut perspiciatis, unde omnis iste natus</div>
+          <div class="order-form-range__percent"><output class="order-form-range__percent-number"
+              id="rangevalue">75</output>%</div>
+          <input type="range" name="range" min="0" max="100" step="1" value="75" oninput="rangevalue.value=value"
+            class="order-form-range__item">
+        </div>
+        <div class="order-form-file">
+          <div class="order-form-file__img"></div>
+          <span class="order-form-file__text">Прикрепить файл</span>
+        </div>
+
+        <button class="order-form__button">отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-wrap">
+      <p class="footer__author">© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
+      <div class="footer-money">
+        <div class="footer-money-item">
+          <div class="footer-money-item__img" data-item="1"></div>
+          <p class="footer-money-item__text">Qiwi wallet</p>
+        </div>
+        <div class="footer-money-item">
+          <div class="footer-money-item__img" data-item="2"></div>
+          <p class="footer-money-item__text">Yandex Money</p>
+        </div>
+        <div class="footer-money-item">
+          <div class="footer-money-item__img" data-item="3"></div>
+          <p class="footer-money-item__text">Web Money</p>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <a href="mailto:info@ipsum228.com" target="_blank" class="footer-contacts-item">
+          <div class="footer-contacts-item__img" data-item="1"></div>
+          <p class="footer-contacts-item__text">info@ipsum228.com</p>
+        </a>
+        <a href="https://vk.com/jerkrage" target="_blank" class="footer-contacts-item">
+          <div class="footer-contacts-item__img" data-item="2"></div>
+          <p class="footer-contacts-item__text">Мы вконтакте</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
